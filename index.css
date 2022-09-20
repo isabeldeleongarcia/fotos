@@ -1,0 +1,39 @@
+#tarjetero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tarjetas{
+    width: 30%;
+    height: 30%;
+    border: 1px solid black;
+}
+
+.foto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+@media (max-width: 630px) {
+    .tarjetas {
+      width: 90%;
+      height: auto;
+    }
+  
+    #tarjetero {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    header {
+      flex-direction: column;
+      height: 200px;
+    }
+  }
